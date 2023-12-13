@@ -63,7 +63,7 @@ example.xcworkspace
 examplern59
 
 # generated files by bob
-lib/
+#lib/
 
 # Visual Studio build artifacts
 windows/RNDeviceInfo/bin
