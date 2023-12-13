@@ -88,7 +88,6 @@ public class RNDeviceModule extends ReactContextBaseJavaModule {
     super(reactContext);
     this.deviceTypeResolver = new DeviceTypeResolver(reactContext);
     this.deviceIdResolver = new DeviceIdResolver(reactContext);
-    this.installReferrerClient = new RNInstallReferrerClient(reactContext.getBaseContext());
   }
 
   @Override
