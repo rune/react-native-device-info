@@ -63,6 +63,7 @@ example.xcworkspace
 examplern59
 
 # generated files by bob
+# Do not ignore the following files so that they can be accessed through GitHub repo
 #lib/
 
 # Visual Studio build artifacts
