@@ -651,12 +651,6 @@ public class RNDeviceModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void getAvailableLocationProviders(Promise p) { p.resolve(getAvailableLocationProvidersSync()); }
 
-  @ReactMethod(isBlockingSynchronousMethod = true)
-  public String getInstallReferrerSync() {
-    SharedPreferences sharedPref = getRNDISharedPreferences(getReactApplicationContext());
-    return sharedPref.getString("installReferrer", Build.UNKNOWN);
-  }
-
   private PackageInfo getPackageInfo() throws Exception {
     return getReactApplicationContext().getPackageManager().getPackageInfo(getReactApplicationContext().getPackageName(), 0);
   }
